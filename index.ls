@@ -26,10 +26,10 @@ angular.module \ERGame, <[]>
           * w: 146, h: 239 #  7 廁所
           * w:  98, h:  60 #  8 香蕉, deprecated but keep for proper order
           * w: 306, h: 298 #  9 醫生台
-          * w: 0, h: 0 # 10 隔簾
+          * w: 191, h: 240 # 10 隔簾
           * w: 0, h: 0 # 11 左窗
           * w: 0, h: 0 # 12 右窗
-          #* w: 0, h: 0 # 10 隔簾
+          #* w: 358, h: 451 # 10 隔簾
         ]
         points:
           [{x: 591, y: -19, type: 6}] ++
