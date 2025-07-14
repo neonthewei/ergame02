@@ -83,6 +83,8 @@ angular.module \ERGame, <[]>
       state: 0
       over: ->
         @set-state 4
+        try
+          ga 'send', 'event', 'ergame03', getToday!, 'e'+(new Date).getTime!.toString!, $scope.doctor.score.value
         $timeout (->
           r = parseInt($scope.doctor.score.value / 10)
           if r >= 6 => r--
@@ -90,6 +92,10 @@ angular.module \ERGame, <[]>
           $scope.doctor.rank = r
           $scope.share.update-rank!
         ), 500
+        $timeout (->
+          url = 'https://zh.surveymonkey.com/r/YWSSZLB' + window.location.search
+          window.location.href = url
+        ), 5000
       set-state: -> 
         @state = it
       tutorial: ->
