@@ -195,38 +195,6 @@
             />
           </div>
           <div id="pause" ng-show="game.state==1">
-            <input
-              id="copy-input"
-              type="text"
-              value="http://0media.tw/p/ergame/"
-            />
-            <div
-              id="pause-link"
-              onclick="ctrl.copy(false,event)"
-              ontouchstart="ctrl.copy(true,event)"
-              data-clipboard-target="#copy-input"
-            >
-              <img data-src="img/pause/link-0.png" class="src" /><img
-                data-src="img/pause/link-1.png"
-                class="src active"
-              />
-            </div>
-            <a
-              id="pause-reporter"
-              ng-click="audio.click()"
-              href="report.html"
-              target="_blank"
-              ><img data-src="img/pause/reporter-0.png" class="src" /><img
-                data-src="img/pause/reporter-1.png"
-                class="src active" /></a
-            ><a
-              id="pause-facebook"
-              ng-href="https://www.facebook.com/dialog/feed?{{share.game}}"
-              target="_blank"
-              ><img data-src="img/pause/fb-0.png" class="src" /><img
-                data-src="img/pause/fb-1.png"
-                class="src active"
-            /></a>
             <div id="pause-tutorial">
               <img data-src="img/pause/tutorial-0.png" class="src" /><img
                 data-src="img/pause/tutorial-1.png"
@@ -286,15 +254,7 @@
             ng-show="game.state==4"
             class="img-bk"
           >
-            <!--a#gover-facebook(ng-href="https://www.facebook.com/dialog/feed?{{share.rank}}",target="_blank")--><!--  img.src(data-src="img/cover/over-share-0.png")--><!--  img.src.active(data-src="img/cover/over-share-1.png")--><a
-              id="gover-reporter"
-              ng-click="audio.click()"
-              href="report.html"
-              target="_blank"
-              ><img data-src="img/cover/over-report-0.png" class="src" /><img
-                data-src="img/cover/over-report-1.png"
-                class="src active"
-            /></a>
+            <!--a#gover-facebook(ng-href="https://www.facebook.com/dialog/feed?{{share.rank}}",target="_blank")--><!--  img.src(data-src="img/cover/over-share-0.png")--><!--  img.src.active(data-src="img/cover/over-share-1.png")-->
             <div id="gover-rank">
               <img id="govevr-rank-bas" data-src="img/lv/0.png" class="src" />
               <div
