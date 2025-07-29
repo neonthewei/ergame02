@@ -495,9 +495,9 @@
         );
 
         // Restrict if screen width is typical for portrait mobile/small tablet,
-        // OR if screen height is typical for landscape mobile (e.g., < 500px).
+        // OR if screen height is typical for landscape mobile (e.g., < 400px).
         const isRestricted =
-          window.innerWidth < 768 || window.innerHeight < 500;
+          window.innerWidth < 600 || window.innerHeight < 400;
 
         if (isRestricted) {
           if (gameContainer) gameContainer.style.display = "none";
